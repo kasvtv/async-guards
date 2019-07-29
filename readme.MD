@@ -150,7 +150,7 @@ Alias for distinct(fn, onSuccess, onError, onSupersede, 1)
 ## FAQ
 
 - *What happens if a function from *first* or *distinct* is supressed? Will my app crash if I curry or call then/catch/finally on the result?*  
-Your app won't crash. When the call is supressed, a dummy thenable is returned with then/catch/finally functions that don't actually do anything. This value can be imported (for equality checking) from `'async-guard/utils/stub'`
+Your app won't crash. When the call is supressed, a dummy thenable is returned with then/catch/finally functions that don't actually do anything. This value can be imported (for equality checking) from `'async-guards/utils/stub'`
 
 - *What about partially applied functions like with redux thunks?*  
 Functions that immediately return other functions are supported.
@@ -162,7 +162,7 @@ All return values are always wrapped in a Promise.
 Then a rejected Promise holding the error is returned.
 
 - *What if halfway through my async function I decide to cancel it?*  
-You can return a cancel token that you can import from `'async-guard/cancel'`.
+You can return a cancel token that you can import from `'async-guards/cancel'`.
 
 <br/>
 <br/>
